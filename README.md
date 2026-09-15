@@ -27,7 +27,7 @@ Demo data (3 trucks, 3 loads, 1 pre-matched deal) is auto-seeded into `localStor
 | Meta titles & descriptions | Every page in `<head>` |
 | Social preview images | `assets/img/og-image.png` (1200×630) wired to OG + Twitter cards |
 | Favicon | `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `site.webmanifest` |
-| Sitemap / robots.txt | `sitemap.xml`, `robots.txt` (replace `loadmatch.example.com` with your domain) |
+| Sitemap / robots.txt | `sitemap.xml`, `robots.txt`https://trackloadadmin.onrender.com';</script>` with your domain) |
 | Alt text on images | All SVGs/maps have `aria-label`/`alt` (decorative icons are `aria-hidden`) |
 | Page load speed | No frameworks/CDNs; gzip + long cache headers in `.htaccess`; optimized PNGs |
 | Color contrast | Text pairs verified ≥ 4.5:1 (e.g. `#111827` on white ≈ 15.8:1; white on `#116B4F` ≈ 5.4:1; `#B45309` on `#FDE68A` ≈ 4.6:1) |
@@ -44,8 +44,8 @@ Demo data (3 trucks, 3 loads, 1 pre-matched deal) is auto-seeded into `localStor
 **Netlify** — `netlify.toml`:
 ```toml
 [[redirects]]
-  from = "http://loadmatch.example.com/*"
-  to = "https://loadmatch.example.com/:splat"
+  from = "https://trackloadadmin.onrender.com/*"
+  to =https://trackloadadmin.onrender.com';</script>/:splat"
   status = 301
   force = true
 [[headers]]
@@ -59,13 +59,13 @@ Demo data (3 trucks, 3 loads, 1 pre-matched deal) is auto-seeded into `localStor
 ```nginx
 server {
   listen 80;
-  server_name loadmatch.example.com;
+  server_name https://trackloadadmin.onrender.com;
   return 301 https://$host$request_uri;
 }
 ```
 
 ## Before going to production
-1. Replace `loadmatch.example.com` everywhere (meta, sitemap, robots) and the GA ID.
+1. Replace https://trackloadadmin.onrender.com`` everywhere (meta, sitemap, robots) and the GA ID.
 2. Move forms/storage to a real backend (this MVP uses `localStorage`); keep the matcher logic as-is.
 3. Swap the escrow/OTP demos for a payment processor (Paystack/Flutterwave) + SMS OTP.
 4. Commission band is configured in `main.js`: `COMMISSION_MIN/MAX/DEFAULT` (3/10/5).
