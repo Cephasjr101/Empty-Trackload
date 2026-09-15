@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://loadmatch.example.com/sitemap.xml
+Sitemap: https://trackloadadmin.onrender.com/sitemap.xml
