@@ -9,7 +9,7 @@
  *
  * Set the backend URL below once you've deployed it (see backend/README.md
  * for the Render deployment steps). For local development against
- * `node server.js`, https://trackloadadmin.onrender.com';</script> is already correct.
+ * `node server.js`, https://trackloadadmin.onrender.com is already correct.
  */
 (function (global) {
   'use strict';
