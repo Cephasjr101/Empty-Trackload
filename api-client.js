@@ -16,7 +16,7 @@
 
   // TODO: replace with your deployed backend's URL once it's live, e.g.
   // 'https://loadmatch-backend.onrender.com'
-  const API_BASE = window.LOADMATCH_API_BASE || 'http://localhost:4000';
+  const API_BASE = window.LOADMATCH_API_BASE || 'https://trackloadadmin.onrender.com';</script>.
 
   const TOKEN_KEY = 'lm_token';
 
