@@ -8,16 +8,12 @@
  * It exposes a single global: LoadMatchAPI
  *
  * Set the backend URL below once you've deployed it (see backend/README.md
- * for the Render deployment steps). For local development against
- * `node server.js`, https://trackloadadmin.onrender.com is already correct.
+ * for the Render deployment steps).
  */
 (function (global) {
   'use strict';
 
-  // TODO: replace with your deployed backend's URL once it's live, e.g.
-  // 'https://loadmatch-backend.onrender.com'
-  const API_BASE = window.LOADMATCH_API_BASE || 'https://trackloadadmin.onrender.com';</script>
-<script src="assets/js/api-client.js"></script>
+  const API_BASE = window.LOADMATCH_API_BASE || 'https://trackloadadmin.onrender.com';
 
   const TOKEN_KEY = 'lm_token';
 
@@ -164,4 +160,3 @@
 
   global.LoadMatchAPI = LoadMatchAPI;
 })(window);
- the api-client.js script tag: <script>window.LOADMATCH_API_BASE = 'https://trackloadadmin.onrender.com';</script>
