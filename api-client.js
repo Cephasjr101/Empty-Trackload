@@ -164,3 +164,4 @@
 
   global.LoadMatchAPI = LoadMatchAPI;
 })(window);
+ the api-client.js script tag: <script>window.LOADMATCH_API_BASE = 'https://trackloadadmin.onrender.com';</script>
